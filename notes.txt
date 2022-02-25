@@ -1,0 +1,33 @@
+In most editors, a line of code can be commented out by pressing the Ctrl+/ hotkey for a single-line comment and something like Ctrl+Shift+/ – for multiline comments (select a piece of code and press the hotkey). For Mac, try Cmd instead of Ctrl and Option instead of Shift.
+
+When the name contains multiple words, camelCase is commonly used. That is: words go one after another, each word except first starting with a capital letter: myVeryLongName.
+
+
+Would it be right to use upper case for birthday? For age? Or even for both?
+
+const BIRTHDAY = '18.04.1982'; // make uppercase?
+
+const AGE = someCode(BIRTHDAY); // make uppercase?
+
+We generally use upper case for constants that are “hard-coded”. Or, in other words, when the value is known prior to execution and directly written into the code.
+
+In this code, birthday is exactly like that. So we could use the upper case for it.
+
+In contrast, age is evaluated in run-time. Today we have one age, a year after we’ll have another one. It is constant in a sense that it does not change through the code execution. But it is a bit “less of a constant” than birthday: it is calculated, so we should keep the lower case for it.
+
+A string in JavaScript must be surrounded by quotes.
+In JavaScript, there are 3 types of quotes.
+
+Double quotes: "Hello".
+Single quotes: 'Hello'.
+Backticks: `Hello`.
+Double and single quotes are “simple” quotes. There’s practically no difference between them in JavaScript.
+
+Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}, for example:
+
+The expression inside ${…} is evaluated and the result becomes a part of the string. We can put anything in there: a variable like name or an arithmetical expression like 1 + 2 or something more complex.
+
+Please note that this can only be done in backticks. Other quotes don’t have this embedding functionality!
+
+alert
+The mini-window with the message is called a modal window. The word “modal” means that the visitor can’t interact with the rest of the page, press other buttons, etc, until they have dealt with the window. In this case – until they press “OK”.
